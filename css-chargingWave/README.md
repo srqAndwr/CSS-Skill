@@ -2,6 +2,7 @@
 ![Image](https://github.com/srqAndwr/CSS-Skill/blob/main/css-chargingWave/img/charging-wave.gif)  
 
 ### 今天的任务就是运用css样式来实现一个波浪式动画。  
+
 ## 原理  
 原理十分简单，我们都知道，一个正方形，给它添加 border-radius: 50%，将会得到一个圆形。  
 ![Image](https://github.com/srqAndwr/CSS-Skill/blob/main/css-chargingWave/img/circle.png)  
@@ -22,10 +23,10 @@
 
 
 ## 技巧  
-单纯的让一个 border-radius 接近 50 的椭圆形旋转，动画效果可能不是那么好，我们可以适当的添加一些其他变换因素，让动画效果看上去更真实：
+单纯的让一个 border-radius 接近 50 的椭圆形旋转，动画效果可能不是那么好，我们可以适当的添加一些其他变换因素，让动画效果看上去更真实：  
 
-在动画过程中，动态的改变 border-radius 的值；
-在动画过程中，利用 transform 对旋转椭圆进行轻微的位移、变形；
-上面也演示到了，多个椭圆同时转动，赋予不同时长的动画，并且添加轻微的透明度，让整个效果更佳逼真。  
+在动画过程中，动态的改变 border-radius 的值;  
+在动画过程中，利用 transform 对旋转椭圆进行轻微的位移、变形;  
+上面也演示到了，多个椭圆同时转动，赋予不同时长的动画，并且添加轻微的透明度，让整个效果更佳逼真。   
 
 喜欢的点个star吧。
