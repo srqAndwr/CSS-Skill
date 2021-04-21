@@ -3,7 +3,7 @@
 
 ## 在线预览
 
-[Online Pages](https://chokcoco.github.io/CSS-Inspiration/#/)
+[Online Pages](http://39.104.91.247:8080/CSS-Skill)
 
 ## 动画
-+ [通过transform与animation实现模拟波浪式充电动画](https://chokcoco.github.io/CSS-Inspiration/#/)
++ [通过transform与animation实现模拟波浪式充电动画](https://github.com/srqAndwr/CSS-Skill/blob/main/css-chargingWave/README.md)
