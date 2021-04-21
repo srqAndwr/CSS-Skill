@@ -3,6 +3,7 @@
 
 ### 今天的任务就是运用css样式来实现一个波浪式动画。  
 
+
 ## 原理  
 原理十分简单，我们都知道，一个正方形，给它添加 border-radius: 50%，将会得到一个圆形。  
 ![Image](https://github.com/srqAndwr/CSS-Skill/blob/main/css-chargingWave/img/circle.png)  
