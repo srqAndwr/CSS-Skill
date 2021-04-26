@@ -213,7 +213,8 @@ Webkit 内核的浏览器，必须加上-webkit前缀。
   
   
 ### 4.6 align-self属性
-` align-self `属性允许单个项目有与其他项目不一样的对齐方式，可覆盖` align-items `属性。默认值为` auto `，表示继承父元素的` align-items `属性，如果没有父元素，则等同于` stretch `。 ```javascript
+` align-self `属性允许单个项目有与其他项目不一样的对齐方式，可覆盖` align-items `属性。默认值为` auto `，表示继承父元素的` align-items `属性，如果没有父元素，则等同于` stretch `。 
+```javascript
   .item {
     align-self: auto | flex-start | flex-end | center | baseline | stretch;
   }
