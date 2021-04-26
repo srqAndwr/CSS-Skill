@@ -1,4 +1,4 @@
-### 实现Flex布局（display:flex）  
+# 实现Flex布局（display:flex）  
   
 网页布局（layout）是 CSS 的一个重点应用。  
 ![Image](https://github.com/srqAndwr/CSS-Skill/blob/main/Flex-layout/img/layout.gif)   
@@ -43,13 +43,13 @@ Webkit 内核的浏览器，必须加上-webkit前缀。
 ## 三、容器的属性  
 以下6个属性设置在容器上。  
 ```javascript
-  *flex-direction
-  *flex-wrap
-  *flex-flow
-  *justify-content
-  *align-items
-  *align-content
+  * flex-direction
+  * flex-wrap
+  * flex-flow
+  * justify-content
+  * align-items
+  * align-content
 ```
 ### 3.1 flex-direction属性  
-`flex-direction'属性决定主轴的方向（即项目的排列方向）。  
+` flex-direction `属性决定主轴的方向（即项目的排列方向）。  
 
