@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<style type="text/css">
+		#box{
+			display: flex;
+		}
+		#outter{
+			width: 400px;
+			display: flex;
+			padding: 5px;
+			box-sizing: border-box;
+			border: 1px solid brown;
+		}
+		#intter{
+			width: 200px;
+			height: 200px;
+			background-color: lightblue;
+			color: #000;
+		}
+		#left{
+			float: left;
+			width: 50%;
+		}
+		#right{
+			float:right;
+			width: 50%;
+		}
+	</style>
+	<body>
+		<div id="box">
+			<div id="left">
+				<h1>flex-direction:row</h1>
+				<div id="outter" style="flex-direction: row;">
+					<div id="intter">
+						我是1号
+					</div>
+					<div id="intter" style="margin-left: 10px;">
+						我是2号
+					</div>
+				</div>
+				<h1>flex-direction:column</h1>
+				<div id="outter" style="flex-direction: column;height: 400px;width: 210px">
+					<div id="intter">
+						我是1号
+					</div>
+					<div id="intter" style="margin-top: 10px;">
+						我是2号
+					</div>
+				</div>
+			</div>
+			<div id="right">
+				<h1>flex-direction:row-reverse</h1>
+				<div id="outter" style="flex-direction: row-reverse;">
+					<div id="intter">
+						我是1号
+					</div>
+					<div id="intter" style="margin-right: 10px;">
+						我是2号
+					</div>
+				</div>
+				<h1>flex-direction:column-reverser</h1>
+				<div id="outter" style="flex-direction: column-reverse;height: 400px;width: 210px">
+					<div id="intter">
+						我是1号
+					</div>
+					<div id="intter" style="margin-bottom: 10px;">
+						我是2号
+					</div>
+				</div>
+		    </div>
+		</div>
+		<div id="wrap">
+					<h1>flex-wrap:nowrap</h1>
+					<div id="outter" style="width: 1000px;flex-direction:row;flex-wrap: nowrap;">
+						<div id="intter" style="margin-right: 10px;">
+							我是1号
+						</div>
+						<div id="intter" style="margin-right: 10px;">
+							我是2号
+						</div>
+						<div id="intter" style="margin-right: 10px;">
+							我是3号
+						</div>
+						<div id="intter" style="margin-right: 10px;">
+							我是4号
+						</div>
+						<div id="intter">
+							我是5号
+						</div>
+					</div>
+					<h1>flex-wrap:wrap</h1>
+					<div id="outter" style="width: 1000px;flex-direction:row;flex-wrap: wrap;">
+						<div id="intter" style="margin-right: 10px;">
+							我是1号
+						</div>
+						<div id="intter" style="margin-right: 10px;">
+							我是2号
+						</div>
+						<div id="intter" style="margin-right: 10px;">
+							我是3号
+						</div>
+						<div id="intter" style="margin-right: 10px;">
+							我是4号
+						</div>
+						<div id="intter"  style="margin-top: 10px;">
+							我是5号
+						</div>
+					</div>
+					<h1>flex-wrap:wrap-reverse</h1>
+					<div id="outter" style="width: 1000px;flex-direction:row;flex-wrap: wrap-reverse;">
+						<div id="intter" style="margin-right: 10px;">
+							我是1号
+						</div>
+						<div id="intter" style="margin-right: 10px;">
+							我是2号
+						</div>
+						<div id="intter" style="margin-right: 10px;">
+							我是3号
+						</div>
+						<div id="intter" style="margin-right: 10px;">
+							我是4号
+						</div>
+						<div id="intter"  style="margin-bottom: 10px;">
+							我是5号
+						</div>
+					</div>
+				</div>
+		<div id="jContent">
+			<h1>justify-content:flex-start</h1>
+			<div id="outter" style="width: 1000px;justify-content: flex-start;">
+				<div id="intter" style="width: 200px; margin-right: 10px;">
+					我是1号
+				</div>
+				<div id="intter" style="width: 300px;margin-right: 10px;">
+					我是2号
+				</div>
+				<div id="intter">
+					我是3号
+				</div>
+			</div>
+			<h1>justify-content:flex-end</h1>
+			<div id="outter" style="width: 1000px;justify-content: flex-end;">
+				<div id="intter" style="width: 200px; margin-right: 10px;">
+					我是1号
+				</div>
+				<div id="intter" style="width: 300px;margin-right: 10px;">
+					我是2号
+				</div>
+				<div id="intter">
+					我是3号
+				</div>
+			</div>
+			<h1>justify-content:center</h1>
+			<div id="outter" style="width: 1000px;justify-content: center;">
+				<div id="intter" style="width: 200px; margin-right: 10px;">
+					我是1号
+				</div>
+				<div id="intter" style="width: 300px;margin-right: 10px;">
+					我是2号
+				</div>
+				<div id="intter">
+					我是3号
+				</div>
+			</div>
+			<h1>justify-content:space-between</h1>
+			<div id="outter" style="width: 1000px;justify-content: space-between;">
+				<div id="intter" style="width: 200px; margin-right: 10px;">
+					我是1号
+				</div>
+				<div id="intter" style="width: 300px;margin-right: 10px;">
+					我是2号
+				</div>
+				<div id="intter">
+					我是3号
+				</div>
+			</div>
+			<h1>justify-content:space-around</h1>
+			<div id="outter" style="width: 1000px;justify-content: space-around;">
+				<div id="intter" style="width: 200px; margin-right: 10px;">
+					我是1号
+				</div>
+				<div id="intter" style="width: 300px;margin-right: 10px;">
+					我是2号
+				</div>
+				<div id="intter">
+					我是3号
+				</div>
+			</div>
+		</div>
+		<div id="Aitems">
+			<h1>align-items:flex-start</h1>
+			<div id="outter" style="width: 1000px;align-items: flex-start;">
+				<div id="intter" style="height: 200px; margin-right: 10px;">
+					我是1号
+				</div>
+				<div id="intter" style="height: 300px;margin-right: 10px;">
+					我是2号
+				</div>
+				<div id="intter">
+					我是3号
+				</div>
+			</div>
+			<h1>align-items:flex-end</h1>
+			<div id="outter" style="width: 1000px;align-items: flex-end;">
+				<div id="intter" style="height: 200px; margin-right: 10px;">
+					我是1号
+				</div>
+				<div id="intter" style="height: 300px;margin-right: 10px;">
+					我是2号
+				</div>
+				<div id="intter">
+					我是3号
+				</div>
+			</div>
+			<h1>align-items:center</h1>
+			<div id="outter" style="width: 1000px;align-items:center;">
+				<div id="intter" style="height: 200px; margin-right: 10px;">
+					我是1号
+				</div>
+				<div id="intter" style="height: 300px;margin-right: 10px;">
+					我是2号
+				</div>
+				<div id="intter">
+					我是3号
+				</div>
+			</div>
+			<h1>align-items:stretch</h1>
+			<div id="outter" style="width: 1000px;align-items: stretch;">
+				<div id="intter" style="height: 200px; margin-right: 10px;">
+					我是1号
+				</div>
+				<div id="intter" style="height: 300px;margin-right: 10px;">
+					我是2号
+				</div>
+				<div id="intter">
+					我是3号
+				</div>
+			</div>
+			<h1>align-items:baseline</h1>
+			<div id="outter" style="width: 1000px;align-items: baseline;">
+				<div id="intter" style="height: 200px; margin-right: 10px;">
+					我是1号
+				</div>
+				<div id="intter" style="height: 300px;margin-right: 10px;">
+					我是2号
+				</div>
+				<div id="intter">
+					我是3号
+				</div>
+			</div>
+		</div>
+		<div id="grow">
+			<h1>flex-grow:0</h1>
+			<div id="outter" style="width: 1000px;flex-grow: 0;">
+				<div id="intter" style="margin-right: 10px;">
+					我是1号
+				</div>
+				<div id="intter" style="margin-right: 10px;">
+					我是2号
+				</div>
+				<div id="intter">
+					我是3号
+				</div>
+			</div>
+			<h1>flex-grow:1</h1>
+			<div id="outter" style="width: 1000px;flex-grow: 1;">
+				<div id="intter" style="margin-right: 10px;flex-grow: 1;">
+					我是1号
+				</div>
+				<div id="intter" style="margin-right: 10px;flex-grow: 1;">
+					我是2号
+				</div>
+				<div id="intter" style="flex-grow: 1;">
+					我是3号
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
