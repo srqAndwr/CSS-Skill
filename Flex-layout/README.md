@@ -18,13 +18,13 @@ Flex 是 Flexible Box 的缩写，意为"弹性布局"，用来为盒状模型�
   }
 ```
 行内元素也可以使用 Flex 布局。  
-```javascript
+```css
   .box{
      display: inline-flex;
   }
 ```
 Webkit 内核的浏览器，必须加上-webkit前缀。  
-```javascript
+```css
   .box{
      display: -webkit-flex; /* Safari */
      display: flex;
@@ -52,7 +52,7 @@ Webkit 内核的浏览器，必须加上-webkit前缀。
 ```
 ### 3.1 flex-direction属性  
 ` flex-direction `属性决定主轴的方向（即项目的排列方向）。  
-```javascript
+```css
   .box {
     flex-direction: row | row-reverse | column | column-reverse;
   }
@@ -60,7 +60,7 @@ Webkit 内核的浏览器，必须加上-webkit前缀。
 ![Image](https://github.com/srqAndwr/CSS-Skill/blob/main/Flex-layout/img/direction.png)  
 它可能有4个值。  
 以下6个属性设置在容器上。  
-```javascript
+```css
   row（默认值）：主轴为水平方向，起点在左端。
   row-reverse：主轴为水平方向，起点在右端。
   column：主轴为垂直方向，起点在上沿。
@@ -70,7 +70,7 @@ Webkit 内核的浏览器，必须加上-webkit前缀。
 ### 3.2 flex-wrap属性  
 默认情况下，项目都排在一条线（又称"轴线"）上。` flex-wrap `属性定义，如果一条轴线排不下，如何换行。  
 ![Image](https://github.com/srqAndwr/CSS-Skill/blob/main/Flex-layout/img/wrap.png)  
-```javascript
+```css
   .box{
     flex-wrap: nowrap | wrap | wrap-reverse;
   }
@@ -86,7 +86,7 @@ Webkit 内核的浏览器，必须加上-webkit前缀。
   
 ### 3.3 flex-flow  
 ` flex-flow `属性是` flex-direction `属性和` flex-wrap `属性的简写形式，默认值为` row nowrap `。  
-```javascript
+```css
   .box {
     flex-flow: <flex-direction> || <flex-wrap>;
   }
@@ -95,14 +95,14 @@ Webkit 内核的浏览器，必须加上-webkit前缀。
   
 ### 3.4 justify-content属性  
 ` justify-content `属性定义了项目在主轴上的对齐方式。  
-```javascript
+```css
   .box {
     justify-content: flex-start | flex-end | center | space-between | space-around;
   }
 ```
 ![Image](https://github.com/srqAndwr/CSS-Skill/blob/main/Flex-layout/img/content.png)  
 它可能取5个值，具体对齐方式与轴的方向有关。下面假设主轴为从左到右。  
-```javascrip
+```css
   flex-start（默认值）：左对齐
   flex-end：右对齐
   center： 居中
@@ -113,14 +113,14 @@ Webkit 内核的浏览器，必须加上-webkit前缀。
   
 ### 3.5 align-items属性
 ` align-items `属性定义项目在交叉轴上如何对齐。  
-```javascript
+```css
   .box {
     align-items: flex-start | flex-end | center | baseline | stretch;
   }
 ```
 ![Image](https://github.com/srqAndwr/CSS-Skill/blob/main/Flex-layout/img/items.png)  
 它可能取5个值。具体的对齐方式与交叉轴的方向有关，下面假设交叉轴从上到下。  
-```javascript
+```css
   flex-start：交叉轴的起点对齐。
   flex-end：交叉轴的终点对齐。
   center：交叉轴的中点对齐。
@@ -131,7 +131,7 @@ Webkit 内核的浏览器，必须加上-webkit前缀。
   
 ### 3.6 align-content属性
 ` align-content `属性定义了多根轴线的对齐方式。如果项目只有一根轴线，该属性不起作用。  
-```javascript
+```css
   .box {
     align-content: flex-start | flex-end | center | space-between | space-around | stretch;
   }
@@ -148,7 +148,7 @@ Webkit 内核的浏览器，必须加上-webkit前缀。
 ```
 ## 四、项目的属性
 以下6个属性设置在项目上。  
-```javascript
+```css
   order
   flex-grow
   flex-shrink
@@ -160,7 +160,7 @@ Webkit 内核的浏览器，必须加上-webkit前缀。
   
 ### 4.1 order属性 
 ` order `属性定义项目的排列顺序。数值越小，排列越靠前，默认为0。  
-```javascript
+```css
   .item {
     order: <integer>;
   }
@@ -170,7 +170,7 @@ Webkit 内核的浏览器，必须加上-webkit前缀。
   
 ### 4.2 flex-grow属性
 ` flex-grow `属性定义项目的放大比例，默认为` 0 `，即如果存在剩余空间，也不放大。  
-```javascript  
+```css  
   .item {
     flex-grow: <number>; /* default 0 */
   }
@@ -181,7 +181,7 @@ Webkit 内核的浏览器，必须加上-webkit前缀。
   
 ### 4.3 flex-shrink属性
 ` flex-shrink `属性定义了项目的缩小比例，默认为1，即如果空间不足，该项目将缩小。  
-```javascript
+```css
   .item {
     flex-shrink: <number>; /* default 1 */
   }
@@ -193,7 +193,7 @@ Webkit 内核的浏览器，必须加上-webkit前缀。
   
 ### 4.4 flex-basis属性
 ` flex-basis `属性定义了在分配多余空间之前，项目占据的主轴空间（main size）。浏览器根据这个属性，计算主轴是否有多余空间。它的默认值为` auto `，即项目的本来大小。  
-```javascript
+```css
   .item {
     flex-basis: <length> | auto; /* default auto */
   }
@@ -203,7 +203,7 @@ Webkit 内核的浏览器，必须加上-webkit前缀。
   
 ### 4.5 flex属性
 ` flex `属性是` flex-grow `, ` flex-shrink ` 和 ` flex-basis `的简写，默认值为` 0 1 auto `。后两个属性可选。  
-```javascript
+```css
   .item {
     flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]
   }
@@ -214,7 +214,7 @@ Webkit 内核的浏览器，必须加上-webkit前缀。
   
 ### 4.6 align-self属性
 ` align-self `属性允许单个项目有与其他项目不一样的对齐方式，可覆盖` align-items `属性。默认值为` auto `，表示继承父元素的` align-items `属性，如果没有父元素，则等同于` stretch `。 
-```javascript
+```css
   .item {
     align-self: auto | flex-start | flex-end | center | baseline | stretch;
   }
